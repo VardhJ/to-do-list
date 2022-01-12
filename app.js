@@ -11,7 +11,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+//Connecting to MongoDB Atlas
+mongoose.connect("mongodb+srv://admin-vardh:Test123@cluster0.dpozo.mongodb.net/todolistDB");
 
 //Schema:
 const itemsSchema = {
